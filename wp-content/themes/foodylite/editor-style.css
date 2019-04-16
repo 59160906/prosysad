@@ -1,0 +1,258 @@
+/*
+Theme Name: FoodyLite
+Description: Used to style the TinyMCE editor.
+*/
+
+
+html .mceContentBody {
+	font-size: 100%;
+}
+body {
+	font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #222;
+	font-weight: 400;
+	line-height: 1.5;
+	text-rendering: optimizeLegibility;
+	vertical-align: baseline;
+}
+
+/* --- Headlines --- */
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Cormorant Garamond', sans-serif;
+	font-weight: 700;
+    margin-top: 0;
+	margin-bottom: 4px;
+}
+h1 {
+	font-size: 26px;
+}
+h2 {
+	font-size: 23px;
+}
+h3 {
+	font-size: 20px;
+}
+h4 {
+	font-size: 18px;
+}
+h5 {
+	font-size: 16px;
+}
+h6 {
+	font-size: 14px;
+}
+
+/* --- Text Elements --- */
+p {
+	margin-bottom: 1.5em;
+}
+p strong {
+	font-weight: bold !important;
+}
+em {
+	font-style: italic;
+}
+p small {
+	font-size: .8em;
+}
+blockquote {
+	position: relative;
+    font-style: italic;
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding: 5px 20px;
+}
+blockquote p {
+	font-size: 18px;
+}
+blockquote cite {
+	text-align: center;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+blockquote cite:before {
+	content: '\2013';
+	display: inline;
+	padding: 0 2px 0 0;
+	-webkit-font-smoothing: antialiased;
+}
+p span.dropcap {
+	float: left;
+	padding: 0 5px 0 0;
+	font-size: 54px;
+	font-size: 3.375rem;
+	font-weight: bold;
+	line-height: 1;
+}
+pre {
+	max-width: 100%;
+	margin-bottom: 24px;
+	padding: 15px;
+	overflow: auto;
+	background: #ededed;
+	font-family:  Consolas, Monaco, monospace;
+	font-size: 12px;
+	font-size: 0.75rem;
+	line-height: 1.4;
+}
+address{
+	margin: 0 0 24px;
+	font-size: 16px;
+	font-size: 1rem;
+	line-height: 1.6;
+}
+abbr,acronym {
+	border-bottom:.1em dotted;
+}
+mark, ins {
+	background: #d6fce2;
+	text-decoration: none;
+}
+
+/* --- Images --- */
+img, .page img {
+	max-width:100%;
+	height: auto;
+	margin: 0;
+	padding: 0;
+}
+img[class*="wp-image-"] {
+	height: auto;
+	max-width: 97.5%;
+}
+img.size-full {
+	width: auto; /* Prevent stretching of full-size images in IE8 */
+}
+p img,
+.wp-caption {
+	margin-top: 0.4em;
+}
+.wp-caption {
+	padding: 24px 0;
+	border: none;
+	background-color: #fff;
+	-webkit-border-radius:0;
+	border-radius: 0;
+	padding: 10px 2px 0;
+	font-size: 12px;
+	line-height: 1.35;
+	font-style: italic;
+	text-align: center;
+}
+.wp-caption-dd {
+	font-size: 13px;
+	line-height: 1.35;
+	padding: 12px 0 24px;
+}
+img {
+	border: none;
+}
+img.alignleft,
+img.alignright,
+img.aligncenter {
+	margin-bottom: 1.625em;
+}
+.wp-caption {
+	width:auto !important;
+	max-width: 100%;
+	text-align: left;
+}
+.wp-caption .wp-caption-text {
+	margin: 0;
+	padding: 10px 2px 38px;
+}
+/* --- Tables --- */
+table {
+	width: 100%;
+	margin: 0 0 40px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-bottom: 1px solid #cbcbcb;
+	line-height: 2;
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+table td {
+	padding: 6px 6px 6px 0;
+	border-top: 1px solid #cbcbcb;
+}
+table caption {
+	margin: 40px 0;
+}
+table th {
+	padding: 6px 6px 6px 0;
+	text-align:left;
+	font-weight: bold;
+}
+
+/* --- List Elements --- */
+ul, ol {
+	margin: 0 0 24px 0;
+	padding-left: 40px;
+	list-style-position: inside;
+}
+ul {
+	list-style: square;
+}
+ol {
+	list-style: decimal;
+}
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 0;
+}
+ul li,
+ol li,
+ul li,
+ul li  {
+	margin-bottom: 4px;
+	list-style-position: outside;
+}
+ul ul li:last-child,
+ol ol li:last-child,
+ul ul li:last-child,
+ol ol li:last-child {
+	margin-bottom: 0;
+}
+ul ul,
+ol ol,
+ul ul,
+ol ol {
+	padding-left: 50px;
+}
+
+/* --- Links --- */
+a,
+a em,
+a strong {
+	color: #54a8d0;
+	text-decoration: none;
+}
+
+
+/* --- Alignment --- */
+.alignleft,
+.alignright {
+	display: block;
+}
+.alignleft {
+	margin: 5px 45px 5px 0;
+	float: left;
+}
+.alignright {
+	margin: 5px 0 0 30px;
+	float: right;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+}
+img.alignleft,
+img.alignright {
+	margin-top:10px;
+	margin-bottom:20px;
+}

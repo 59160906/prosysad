@@ -1,0 +1,304 @@
+/*
+Theme Name: FoodyLite
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+/* body {direction:rtl;} */
+
+textarea{
+    padding-right: 3px;
+}
+
+@media screen and (min-width: 1024px){
+    .site-content{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .content-area{
+        float: right;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .widget-area{
+        float: left;
+        padding-right: 10px;
+        padding-left: 10px;
+        clear: left;
+    }
+
+    .blog .post{
+        float: right;
+    }
+
+    .centered{
+        float: right;
+        margin-right: 15%;
+    }
+
+    .main-navigation ul{
+        float: right;
+        text-align: right;
+    }
+
+    .main-navigation li{
+        margin-left: 28px;
+    }
+
+    .main-navigation li:last-child{
+        margin-left: 0;
+    }
+
+    .main-navigation .menu .sub-menu, .main-navigation .menu .children{
+        right: 0;
+    }
+
+    .main-navigation ul.menu ul li, .main-navigation .menu ul ul li{
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .main-navigation .menu .sub-menu ul, .main-navigation .menu .children ul{
+        right: 100%;
+    }
+
+    .site-top{
+        float: left;
+    }
+
+    .sidebar-top{
+        float: right;
+    }
+
+    .search-top{
+        float: left;
+        text-align: left;
+    }
+
+    .archive .post{
+        float: right;
+    }
+
+    .archive .post:nth-child(3n+1){
+        clear: right;
+    }
+
+}
+
+.float-left{
+    float: right;
+    clear: right;
+}
+
+.float-right{
+    float: left;
+    clear: left;
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-align: right;
+}
+
+blockquote{
+    border-right: 5px solid #E8E8E8;
+    margin-right: 0;
+}
+
+ul, ol{
+    margin: 0 1em 1.5em 0 ;
+}
+
+li > ul, li > ol{
+    margin-right: 1em;
+}
+
+tfoot td, tfoot th{
+    border-right: 0;
+    border-left: 0;
+}
+
+.main-navigation ul{
+    padding-right: 0;
+}
+
+.main-navigation ul ul ul{
+    right: -999em;
+}
+
+.main-navigation ul li:hover > ul, .main-navigation ul li.focus > ul{
+    right: auto;
+}
+
+.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul{
+    right: 100%;
+}
+
+button.menu-toggle:before{
+    margin-left: 5px;
+}
+
+.pagination .page-numbers{
+    float: right;
+    margin-left: .6em;
+}
+
+.comment-navigation .nav-previous, .pagination .nav-previous, .post-navigation .nav-previous{
+    float: right;
+}
+
+.comment-navigation .nav-previous:before, .pagination .nav-previous:before, .post-navigation .nav-previous:before{
+    margin-left: 8px;
+}
+
+.comment-navigation .nav-next, .pagination .nav-next, .post-navigation .nav-next{
+    float: left;
+    text-align: left;
+}
+
+.comment-navigation .nav-next:after, .pagination .nav-next:after, .post-navigation .nav-next:after{
+    margin-right: 8px;
+}
+
+.screen-reader-text:hover, .screen-reader-text:active, .screen-reader-text:focus{
+    right: 5px;
+}
+
+.alignleft{
+    float: right;
+    margin: 0.2em 0 1em 1em ;
+}
+
+.alignright{
+    float: left;
+    margin: 0.2em 1em 1em 0 ;
+}
+
+.sidebar-top .widget-social span{
+    margin-left: 0;
+}
+
+.search-top input[type="search"]{
+    border-left: 0;
+    border-right: 0;
+}
+
+.site-search{
+    margin-left: 8px;
+}
+
+.footer-widget .widget-title{
+    text-align: right;
+}
+
+@media screen and (min-width: 768px){
+    .footer-sidebar #footer-column-1, .footer-sidebar #footer-column-2, .footer-sidebar #footer-column-3{
+        float: right;
+        margin-left: 3%;
+    }
+
+    .footer-sidebar #footer-column-3{
+        margin-left: 0;
+    }
+
+    .entry-meta{
+        float: right;
+        text-align: right;
+    }
+
+}
+
+.widget ul{
+    padding-right: 0;
+}
+
+.widget ul ul li:before{
+    margin-left: 5px;
+}
+
+.widget-social span{
+    margin-left: 5px;
+}
+
+.jetpack_subscription_widget input[type="submit"]{
+    background: #000 none repeat scroll 100% 0%;
+}
+
+.jetpack_subscription_widget input[type="submit"]:hover{
+    background: #fff none repeat scroll 100% 0%;
+}
+
+.entry-title{
+    text-align: right;
+}
+
+.cat-links{
+    text-align: right;
+}
+
+.entry-footer{
+    text-align: right;
+}
+
+.smoothup{
+    left: 25px;
+}
+
+.comment-reply-title{
+    text-align: right;
+}
+
+.comment-list{
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.comment-author img{
+    float: right;
+    margin-left: 18px;
+}
+
+.comment-content{
+    margin-right: 69px;
+}
+
+.comment-list .children{
+    margin-right: 30px;
+}
+
+.reply{
+    text-align: left;
+}
+
+.woocommerce span.onsale{
+    right: 0;
+}
+
+.woocommerce nav.woocommerce-pagination ul li{
+    margin: 0 0 0 0.2em ;
+}
+
+.woocommerce #reviews #comments ol.commentlist li .comment-text{
+    margin: 0 100px 0 0 ;
+}
+
+.woocommerce ul.order_details{
+    padding-right: 0;
+}
+
+.order-total td , .woocommerce-cart-form__contents td{
+    border-right: 0;
+    border-left: 0;
+}
+
+.woocommerce ul.cart_list li img, .woocommerce ul.product_list_widget li img{
+    float: right;
+    margin-right: 0;
+    margin-left: 10px;
+}
